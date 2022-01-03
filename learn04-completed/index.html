@@ -10,7 +10,7 @@
     <script src="scripts/calculate.js"></script>
 </head>
 
-<body onload="setDate()">
+<body onload="addDate()">
 
     <header>
         <h1>JavaScript and Forms</h1>
@@ -20,15 +20,14 @@
             <div class="top">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="fname"><br>
-                <p id="today"></p>
                 <p>&nbsp;</p>
-
+                <p id="myDate"></p>
                 <label for="rooms">How Many Rooms:</label>
-                <select id="rooms" name="rooms">
-            <option value="1">one</option>
-            <option value="2">two</option>
-            <option value="3">three</option>
-            </select>
+                <select id="rooms" name="rooms" onclick="showScreen()">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+                </select>
             </div>
 
             <div class="room" id="room1">
@@ -69,7 +68,7 @@
             </div>
 
             <div class="bottom">
-                <button type="button">Get Estimate!</button>
+                <button type="button" onclick="estimate()">Get Estimate!</button>
                 <h3>Estimate:</h3>
                 <p id="estimate"></p>
             </div>
