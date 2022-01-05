@@ -22,7 +22,7 @@
         {
             "name": "My SFTP",
             "type": "sftp",
-            "host": "localhost",
+            "host": "prg147.mccdgm.net",
             "port": 22,
             "user": "prg147",
             "password": "Oll13b34r!js",
