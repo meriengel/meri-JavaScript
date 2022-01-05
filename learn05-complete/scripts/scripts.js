@@ -13,7 +13,8 @@ const dog1 = {
 
 function chooseDog(dog) {
     if (dog == 1) {
-        loadMe(dog1, 1)
+        loadMe(dog1, 1) // don't put dog1 in quotes or it will pass a string not the object
+
     }
 
 }
