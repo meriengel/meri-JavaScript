@@ -16,7 +16,7 @@
             "host": "prg147.mccdgm.net",
             "port": 21,
             "user": "prg147",
-            "password": "Oll13b34r!js",
+            "password": "Oll13b34r!",
             "dir": "/public_html"
         },
         {
@@ -25,7 +25,7 @@
             "host": "prg147.mccdgm.net",
             "port": 22,
             "user": "prg147",
-            "password": "Oll13b34r!js",
+            "password": "Oll13b34r!",
             "dir": "/public_html",
             "privateKey": null,
             "passphrase": null
