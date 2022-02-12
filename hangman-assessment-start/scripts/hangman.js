@@ -20,31 +20,30 @@ function setup() {
 }
 
 document.getElementById("submit").addEventListener("click", function(event) {
-            event.preventDefault();
+    event.preventDefault();
+    output = '';
+    userLetter = document.getElementById("guess").value;
+    document.getElementById("guess").value = '';
 
-
-            output = '';
-            userLetter = document.getElementById("guess").value;
-            document.getElementById("guess").value = '';
-
-            for (let c = 0; c < answer.length; c++) {
-                alert(letters[c]);
-                if (userLetter.toUpperCase() == letters[c]) {
-                    display[c] = userLetter.toUpperCase();
-                    win--;
-                }
-
-                output = output + display[c] + ' ';
-            }
-            document.getElementById("game").innerHTML = output;
-            output = '';
-            attemptsLeft--;
-
-            if (win < 1) {
-                document.getElementById("guesses").innerHTML = 'YOU WIN!!!'
-            } else if (attemptsLeft < 1) {
-                document.getElementById("guesses") = 'YOU LOSE!!!'
-            } else {
-                document.getElementById("guesses").innerHTML = 'You have ' + attemptsLeft + ' guesses left';
-            }
+    for (let c = 0; c < answer.length; c++) {
+        alert(letters[c]);
+        if (userLetter.toUpperCase() == letters[c]) {
+            display[c] = userLetter.toUpperCase();
+            win--;
         }
+
+        output = output + display[c] + ' ';
+    }
+    document.getElementById("game").innerHTML = output;
+    output = '';
+    attemptsLeft--;
+
+    if (win < 1) {
+        document.getElementById("guesses").innerHTML = 'YOU WIN!!!';
+    } else if (attemptsLeft < 1) {
+        document.getElementById("guesses").innerHTML = 'YOU LOSE!!!';
+    } else {
+        document.getElementById("guesses").innerHTML = 'You have ' + attemptsLeft + ' guesses left';
+    }
+
+});
