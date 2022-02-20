@@ -4,7 +4,6 @@
 // display the variable in the basic paragraph
 
 
-
 // create a new date variable and load the information for today into it
 // display the results in the today paragraph (Year, Month, Day)
 

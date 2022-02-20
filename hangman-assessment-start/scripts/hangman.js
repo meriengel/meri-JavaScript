@@ -11,7 +11,7 @@ let output = '';
 let userLetter = '';
 
 function setup() {
-    alert(answer);
+    console.log(answer)
     for (let i = 0; i < answer.length; i++) {
         display[i] = "_ ";
         output = output + display[i];
