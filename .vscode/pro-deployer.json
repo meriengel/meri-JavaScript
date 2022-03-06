@@ -1,35 +1,34 @@
 {
-	"uploadOnSave": true,
-	"autoDelete": true,
-	"checkGitignore": false,
-	"activeTargets": [
-		"My FTP"
-	],
-	"concurrency": 5,
-	"ignore": [
-		".git/**/*",
-		".vscode/**/*"
-	],
-	"targets": [
-		{
-			"name": "My FTP",
-			"type": "ftp",
-			"host": "prg147.mccdgm.net",
-			"port": 21,
-			"user": "prg147",
-			"password": "Oll13b34r!js",
-			"dir": "/public_html"
-		},
-		{
-			"name": "My SFTP",
-			"type": "sftp",
-			"host": "prg147.mccdgm.net",
-			"port": 22,
-			"user": "prg147",
-			"password": "Oll23b34r!js",
-			"dir": "/public_html",
-			"privateKey": null,
-			"passphrase": null
-		}
-	]
+    "uploadOnSave": false,
+    "autoDelete": false,
+    "checkGitignore": false,
+    "activeTargets": [
+        "My FTP"
+    ],
+    "concurrency": 5,
+    "ignore": [
+        ".git/**/*",
+        ".vscode/**/*"
+    ],
+    "targets": [{
+            "name": "My FTP",
+            "type": "ftp",
+            "host": "prg147.mccdgm.net",
+            "port": 21,
+            "user": "prg147",
+            "password": "Oll13b34r!js",
+            "dir": "/public_html"
+        },
+        {
+            "name": "My SFTP",
+            "type": "sftp",
+            "host": "prg147.mccdgm.net",
+            "port": 22,
+            "user": "prg147",
+            "password": "Oll23b34r!js",
+            "dir": "/public_html",
+            "privateKey": null,
+            "passphrase": null
+        }
+    ]
 }
