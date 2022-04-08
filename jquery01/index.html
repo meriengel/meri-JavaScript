@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#p-button").click(function() {
+                $("p").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("#test-button").click(function() {
+                $("#test").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("h2").click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Beginning JQuery</h1>
+        <h2>Clicking me makes me disappear</h2>
+        <p>I'm a paragraph</p>
+        <p>I'm a paragraph too!</p>
+        <main id="test">
+            <h2>I'm in the main section</h2>
+            <p>I'm a paragraph in the main section</p>
+        </main>
+
+        <button id="p-button">Click me to hide paragraphs</button>
+        <button id="test-button">Click me to hide Main</button>
+    </div>
+
+</body>
+
+</html>
